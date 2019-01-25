@@ -1,6 +1,8 @@
 ## NativeScript + Angular Snippets for Visual Studio Code ##
 
-Now compatible with Angular 4.x and above.
+Updated to create html5 safe markup for tags and attributes.
+
+Now compatible with Angular 4.x and above. 
 
 This JSON file contains snippets for all NativeScript UI components and some frequently used attributes specifically for use with [nativescript-angular](https://github.com/NativeScript/nativescript-angular).
 
