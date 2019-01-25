@@ -1,515 +1,482 @@
 {
-    // Action Bar
-    "{N} Action Bar": {
-        "prefix": "nsactionbar",
-        "body": [
-            "<ActionBar title=\"Title\" icon=\"\" class=\"action-bar\">",
-            "</ActionBar>"
-        ]
-    },
+  // Action Bar
+  "{N} Action Bar": {
+    "prefix": "nsactionbar",
+    "body": [
+      "<action-bar title=\"Title\" icon=\"\" class=\"action-bar\">",
+      "</action-bar>"
+    ]
+  },
 
-    "{N} Action Bar with Action Items": {
-        "prefix": "nsactionbaritems",
-        "body": [
-            "<ActionBar title=\"Title\" icon=\"\" class=\"action-bar\">",
-            "  <ActionItem (tap)=\"\">",
-            "    <Button class=\"\" text=\"Left\" class=\"action-item\"></Button>",
-            "  </ActionItem>",
-            "  <ActionItem (tap)=\"\" ios.position=\"right\">",
-            "    <Button class=\"\" text=\"Right\" class=\"action-item\"></Button>",
-            "  </ActionItem>",
-            "</ActionBar>"
-        ]
-    },
+  "{N} Action Bar with Action Items": {
+    "prefix": "nsactionbaritems",
+    "body": [
+      "<action-bar title=\"Title\" icon=\"\" class=\"action-bar\">",
+      "  <action-item on-tap=\"\">",
+      "    <button class=\"\" text=\"Left\" class=\"action-item\"></button>",
+      "  </action-item>",
+      "  <action-item on-tap=\"\" ios.position=\"right\">",
+      "    <button class=\"\" text=\"Right\" class=\"action-item\"></button>",
+      "  </action-item>",
+      "</action-bar>"
+    ]
+  },
 
-    "{N} Action Item": {
-        "prefix": "nsactionitem",
-        "body": [
-            "<ActionItem (tap)=\"\">",
-            "  <Button class=\"\" text=\"Left\" class=\"action-item\"></Button>",
-            "</ActionItem>"
-        ]
-    },
+  "{N} Action Item": {
+    "prefix": "nsactionitem",
+    "body": [
+      "<action-item on-tap=\"\">",
+      "  <button class=\"\" text=\"Left\" class=\"action-item\"></button>",
+      "</action-item>"
+    ]
+  },
 
-    "{N} Action Item on the Right": {
-        "prefix": "nsactionitemright",
-        "body": [
-            "<ActionItem (tap)=\"\" ios.position=\"right\">",
-            "  <Button class=\"\" text=\"Right\" class=\"action-item\"></Button>",
-            "</ActionItem>"
-        ]
-    },
+  "{N} Action Item on the Right": {
+    "prefix": "nsaction-itemright",
+    "body": [
+      "<action-item on-tap=\"\" ios.position=\"right\">",
+      "  <button class=\"\" text=\"Right\" class=\"action-item\"></button>",
+      "</action-item>"
+    ]
+  },
 
-    "{N} Action Bar with Back": {
-        "prefix": "nsactionbarback",
-        "body": [
-            "<ActionBar title=\"Title\" icon=\"\" class=\"action-bar\">",
-            "  <NavigationButton text=\"Back\" android.systemIcon=\"ic_menu_back\"></NavigationButton>",
-            "</ActionBar>"
-        ]
-    },
+  "{N} Action Bar with Back": {
+    "prefix": "nsactionbarback",
+    "body": [
+      "<action-bar title=\"Title\" icon=\"\" class=\"action-bar\">",
+      "  <navigation-button text=\"Back\" android.systemIcon=\"ic_menu_back\"></navigation-button>",
+      "</action-bar>"
+    ]
+  },
 
-    "{N} Navigation Button": {
-        "prefix": "nsactionbarnavbtn",
-        "body": [
-            "<NavigationButton text=\"Back\" android.systemIcon=\"ic_menu_back\"></NavigationButton>"
-        ]
-    },
+  "{N} Navigation button": {
+    "prefix": "nsactionbarnavbtn",
+    "body": [
+      "<navigation-button text=\"Back\" android.systemIcon=\"ic_menu_back\"></navigation-button>"
+    ]
+  },
 
-    "{N} Action Bar with Custom Title": {
-        "prefix": "nsactionbarcustomtitle",
-        "body": [
-            "<ActionBar class=\"action-bar\">",
-            "  <StackLayout orientation=\"horizontal\"",
-            "    ios:horizontalAlignment=\"center\"",
-            "    android:horizontalAlignment=\"left\">",
-            "    <Label text=\"$1\" class=\"action-title\"></Label>",
-            "  </StackLayout>",
-            "  <ActionItem (tap)=\"$2\" ios.position=\"right\">",
-            "    <Button class=\"\" text=\"Right\" class=\"action-item\"></Button>",
-            "  </ActionItem>",
-            "</ActionBar>"
-        ]
-    },
+  "{N} Action Bar with Custom Title": {
+    "prefix": "nsactionbarcustomtitle",
+    "body": [
+      "<action-bar class=\"action-bar\">",
+      "  <stack-layout orientation=\"horizontal\"",
+      "    ios:horizontalAlignment=\"center\"",
+      "    android:horizontalAlignment=\"left\">",
+      "    <label text=\"$1\" class=\"action-title\"></label>",
+      "  </stack-layout>",
+      "  <action-item on-tap=\"$2\" ios.position=\"right\">",
+      "    <button class=\"\" text=\"Right\" class=\"action-item\"></button>",
+      "  </action-item>",
+      "</action-bar>"
+    ]
+  },
 
-    // Layouts
-     "{N} Flexbox Layout": {
-        "prefix": "nsflexbox",
-        "body": [
-            "<FlexboxLayout>",
-            "    $1",
-            "</FlexboxLayout>"
-        ]
-    },
-    "{N} Flexbox Layout Column": {
-        "prefix": "nsflexbox_column",
-        "body": [
-            "<FlexboxLayout flexDirection=\"column\">",
-            "    $1",
-            "</FlexboxLayout>"
-        ]
-    },
-    "{N} Stack Layout": {
-        "prefix": "nsstack",
-        "body": [
-            "<StackLayout>",
-            "    $1",
-            "</StackLayout>"
-        ]
-    },
-    "{N} Stack Layout Horizontal": {
-        "prefix": "nsstack_horizontal",
-        "body": [
-            "<StackLayout orientation=\"horizontal\">",
-            "    $1",
-            "</StackLayout>"
-        ]
-    },
-    "{N} Wrap Layout": {
-        "prefix": "nswrap",
-        "body": [
-            "<WrapLayout orientation=\"horizontal\" itemWidth=\"$1\" itemHeight=\"$2\">",
-            "    $3",
-            "</WrapLayout>"
-        ]
-    },
-    "{N} Absolute Layout": {
-        "prefix": "nsabsolute",
-        "body": [
-            "<AbsoluteLayout>",
-            "    <Label text=\"This is Label 1\" top=\"\" right=\"\" bottom=\"\" left=\"\"></Label>",
-            "    $1",
-            "</AbsoluteLayout>"
-        ]
-    },
-    "{N} Dock Layout": {
-        "prefix": "nsdock",
-        "body": [
-            "<DockLayout stretchLastChild=\"true\">",
-            "    <Label dock=\"top\" text=\"I am on top!\"></Label>",
-            "</DockLayout>"
-        ]
-    },
-    "{N} Grid Layout": {
-        "prefix": "nsgrid",
-        "body": [
-            "<GridLayout rows=\"$1\" columns=\"$2\">",
-            "    $3",
-            "</GridLayout>"
-        ]
-    },
-    "{N} Grid Layout 2x2": {
-        "prefix": "nsgrid_2x2",
-        "body": [
-            "<GridLayout rows=\"*, *\" columns=\"*, *\">",
-            "    <Label text=\"0, 0\" row=\"0\" col=\"0\"></Label>",
-            "    <Label text=\"0, 1\" row=\"0\" col=\"1\"></Label>",
-            "    <Label text=\"1, 0\" row=\"1\" col=\"0\"></Label>",
-            "    <Label text=\"1, 1\" row=\"1\" col=\"1\"></Label>",
-            "</GridLayout>"
-        ]
-    },
-    "{N} Grid Layout 2x2 Automatic Width/Height": {
-        "prefix": "nsgrid_2x2_auto",
-        "body": [
-            "<GridLayout rows=\"auto, auto\" columns=\"auto, auto\">",
-            "    <Label text=\"0, 0\" row=\"0\" col=\"0\"></Label>",
-            "    <Label text=\"0, 1\" row=\"0\" col=\"1\"></Label>",
-            "    <Label text=\"1, 0\" row=\"1\" col=\"0\"></Label>",
-            "    <Label text=\"1, 1\" row=\"1\" col=\"1\"></Label>",
-            "</GridLayout>"
-        ]
-    },
-    "{N} Grid Layout 3x3 ": {
-        "prefix": "nsgrid_3x3",
-        "body": [
-            "<GridLayout rows=\"*, *, *\" columns=\"*, *, *\">",
-            "    <Label text=\"0, 0\" row=\"0\" col=\"0\"></Label>",
-            "    <Label text=\"0, 1\" row=\"0\" col=\"1\"></Label>",
-            "    <Label text=\"0, 2\" row=\"0\" col=\"2\"></Label>",
-            "    <Label text=\"1, 0\" row=\"1\" col=\"0\"></Label>",
-            "    <Label text=\"1, 1\" row=\"1\" col=\"1\"></Label>",
-            "    <Label text=\"1, 2\" row=\"1\" col=\"2\"></Label>",
-            "    <Label text=\"2, 0\" row=\"2\" col=\"0\"></Label>",
-            "    <Label text=\"2, 1\" row=\"2\" col=\"1\"></Label>",
-            "    <Label text=\"2, 2\" row=\"2\" col=\"2\"></Label>",
-            "</GridLayout>"
-        ]
-    },
-    "{N} Grid Layout 3x3 Automatic Width/Height": {
-        "prefix": "nsgrid_3x3_auto",
-        "body": [
-            "<GridLayout rows=\"auto, auto, auto\" columns=\"auto, auto, auto\">",
-            "    <Label text=\"0, 0\" row=\"0\" col=\"0\"></Label>",
-            "    <Label text=\"0, 1\" row=\"0\" col=\"1\"></Label>",
-            "    <Label text=\"0, 2\" row=\"0\" col=\"2\"></Label>",
-            "    <Label text=\"1, 0\" row=\"1\" col=\"0\"></Label>",
-            "    <Label text=\"1, 1\" row=\"1\" col=\"1\"></Label>",
-            "    <Label text=\"1, 2\" row=\"1\" col=\"2\"></Label>",
-            "    <Label text=\"2, 0\" row=\"2\" col=\"0\"></Label>",
-            "    <Label text=\"2, 1\" row=\"2\" col=\"1\"></Label>",
-            "    <Label text=\"2, 2\" row=\"2\" col=\"2\"></Label>",
-            "</GridLayout>"
-        ]
-    },
-    "{N} Grid Layout 4x3 ": {
-        "prefix": "nsgrid_4x3",
-        "body": [
-            "<GridLayout rows=\"*, *, *, *\" columns=\"*, *, *\">",
-            "    <Label text=\"0, 0\" row=\"0\" col=\"0\"></Label>",
-            "    <Label text=\"0, 1\" row=\"0\" col=\"1\"></Label>",
-            "    <Label text=\"0, 2\" row=\"0\" col=\"2\"></Label>",
-            "    <Label text=\"1, 0\" row=\"1\" col=\"0\"></Label>",
-            "    <Label text=\"1, 1\" row=\"1\" col=\"1\"></Label>",
-            "    <Label text=\"1, 2\" row=\"1\" col=\"2\"></Label>",
-            "    <Label text=\"2, 0\" row=\"2\" col=\"0\"></Label>",
-            "    <Label text=\"2, 1\" row=\"2\" col=\"1\"></Label>",
-            "    <Label text=\"2, 2\" row=\"2\" col=\"2\"></Label>",
-            "    <Label text=\"3, 0\" row=\"3\" col=\"0\"></Label>",
-            "    <Label text=\"3, 1\" row=\"3\" col=\"1\"></Label>",
-            "    <Label text=\"3, 2\" row=\"3\" col=\"2\"></Label>",
-            "</GridLayout>"
-        ]
-    },
-    "{N} Grid Layout 4x3 Automatic Width/Height": {
-        "prefix": "nsgrid_4x3_auto",
-        "body": [
-            "<GridLayout rows=\"auto, auto, auto, auto\" columns=\"auto, auto, auto\">",
-            "    <Label text=\"0, 0\" row=\"0\" col=\"0\"></Label>",
-            "    <Label text=\"0, 1\" row=\"0\" col=\"1\"></Label>",
-            "    <Label text=\"0, 2\" row=\"0\" col=\"2\"></Label>",
-            "    <Label text=\"1, 0\" row=\"1\" col=\"0\"></Label>",
-            "    <Label text=\"1, 1\" row=\"1\" col=\"1\"></Label>",
-            "    <Label text=\"1, 2\" row=\"1\" col=\"2\"></Label>",
-            "    <Label text=\"2, 0\" row=\"2\" col=\"0\"></Label>",
-            "    <Label text=\"2, 1\" row=\"2\" col=\"1\"></Label>",
-            "    <Label text=\"2, 2\" row=\"2\" col=\"2\"></Label>",
-            "    <Label text=\"3, 0\" row=\"3\" col=\"0\"></Label>",
-            "    <Label text=\"3, 1\" row=\"3\" col=\"1\"></Label>",
-            "    <Label text=\"3, 2\" row=\"3\" col=\"2\"></Label>",
-            "</GridLayout>"
-        ]
-    },
-    "{N} Grid Layout 4x4": {
-        "prefix": "nsgrid_4x4",
-        "body": [
-            "<GridLayout rows=\"*, *, *, *\" columns=\"*, *, *, *\">",
-            "    <Label text=\"0, 0\" row=\"0\" col=\"0\"></Label>",
-            "    <Label text=\"0, 1\" row=\"0\" col=\"1\"></Label>",
-            "    <Label text=\"0, 2\" row=\"0\" col=\"2\"></Label>",
-            "    <Label text=\"0, 3\" row=\"0\" col=\"3\"></Label>",
-            "    <Label text=\"1, 0\" row=\"1\" col=\"0\"></Label>",
-            "    <Label text=\"1, 1\" row=\"1\" col=\"1\"></Label>",
-            "    <Label text=\"1, 2\" row=\"1\" col=\"2\"></Label>",
-            "    <Label text=\"1, 3\" row=\"1\" col=\"3\"></Label>",
-            "    <Label text=\"2, 0\" row=\"2\" col=\"0\"></Label>",
-            "    <Label text=\"2, 1\" row=\"2\" col=\"1\"></Label>",
-            "    <Label text=\"2, 2\" row=\"2\" col=\"2\"></Label>",
-            "    <Label text=\"2, 3\" row=\"2\" col=\"3\"></Label>",
-            "    <Label text=\"3, 0\" row=\"3\" col=\"0\"></Label>",
-            "    <Label text=\"3, 1\" row=\"3\" col=\"1\"></Label>",
-            "    <Label text=\"3, 2\" row=\"3\" col=\"2\"></Label>",
-            "    <Label text=\"3, 3\" row=\"3\" col=\"3\"></Label>",
-            "</GridLayout>"
-        ]
-    },
-    "{N} Grid Layout 4x4 Automatic Width/Height": {
-        "prefix": "nsgrid_4x4_auto",
-        "body": [
-            "<GridLayout rows=\"auto, auto, auto, auto\" columns=\"auto, auto, auto, auto\">",
-            "    <Label text=\"0, 0\" row=\"0\" col=\"0\"></Label>",
-            "    <Label text=\"0, 1\" row=\"0\" col=\"1\"></Label>",
-            "    <Label text=\"0, 2\" row=\"0\" col=\"2\"></Label>",
-            "    <Label text=\"0, 3\" row=\"0\" col=\"3\"></Label>",
-            "    <Label text=\"1, 0\" row=\"1\" col=\"0\"></Label>",
-            "    <Label text=\"1, 1\" row=\"1\" col=\"1\"></Label>",
-            "    <Label text=\"1, 2\" row=\"1\" col=\"2\"></Label>",
-            "    <Label text=\"1, 3\" row=\"1\" col=\"3\"></Label>",
-            "    <Label text=\"2, 0\" row=\"2\" col=\"0\"></Label>",
-            "    <Label text=\"2, 1\" row=\"2\" col=\"1\"></Label>",
-            "    <Label text=\"2, 2\" row=\"2\" col=\"2\"></Label>",
-            "    <Label text=\"2, 3\" row=\"2\" col=\"3\"></Label>",
-            "    <Label text=\"3, 0\" row=\"3\" col=\"0\"></Label>",
-            "    <Label text=\"3, 1\" row=\"3\" col=\"1\"></Label>",
-            "    <Label text=\"3, 2\" row=\"3\" col=\"2\"></Label>",
-            "    <Label text=\"3, 3\" row=\"3\" col=\"3\"></Label>",
-            "</GridLayout>"
-        ]
-    },
+  // Layouts
+  "{N} Flexbox Layout": {
+    "prefix": "nsflexbox",
+    "body": ["<flexbox-layout>", "    $1", "</flexbox-layout>"]
+  },
+  "{N} Flexbox Layout Column": {
+    "prefix": "nsflexbox_column",
+    "body": [
+      "<flexbox-layout flex-direction=\"column\">",
+      "    $1",
+      "</flexbox-layout>"
+    ]
+  },
+  "{N} Stack Layout": {
+    "prefix": "nsstack",
+    "body": ["<stack-layout>", "    $1", "</stack-layout>"]
+  },
+  "{N} Stack Layout Horizontal": {
+    "prefix": "nsstack_horizontal",
+    "body": [
+      "<stack-layout orientation=\"horizontal\">",
+      "    $1",
+      "</stack-layout>"
+    ]
+  },
+  "{N} Wrap Layout": {
+    "prefix": "nswrap",
+    "body": [
+      "<wrap-layout orientation=\"horizontal\" itemWidth=\"$1\" itemHeight=\"$2\">",
+      "    $3",
+      "</wrap-layout>"
+    ]
+  },
+  "{N} Absolute Layout": {
+    "prefix": "nsabsolute",
+    "body": [
+      "<absolute-layout>",
+      "    <label text=\"This is label 1\" top=\"\" right=\"\" bottom=\"\" left=\"\"></label>",
+      "    $1",
+      "</absolute-layout>"
+    ]
+  },
+  "{N} Dock Layout": {
+    "prefix": "nsdock",
+    "body": [
+      "<dock-layout stretchLastChild=\"true\">",
+      "    <label dock=\"top\" text=\"I am on top!\"></label>",
+      "</dock-layout>"
+    ]
+  },
+  "{N} Grid Layout": {
+    "prefix": "nsgrid",
+    "body": [
+      "<grid-layout rows=\"$1\" columns=\"$2\">",
+      "    $3",
+      "</grid-layout>"
+    ]
+  },
+  "{N} Grid Layout 2x2": {
+    "prefix": "nsgrid_2x2",
+    "body": [
+      "<grid-layout rows=\"*, *\" columns=\"*, *\">",
+      "    <label text=\"0, 0\" row=\"0\" col=\"0\"></label>",
+      "    <label text=\"0, 1\" row=\"0\" col=\"1\"></label>",
+      "    <label text=\"1, 0\" row=\"1\" col=\"0\"></label>",
+      "    <label text=\"1, 1\" row=\"1\" col=\"1\"></label>",
+      "</grid-layout>"
+    ]
+  },
+  "{N} Grid Layout 2x2 Automatic Width/Height": {
+    "prefix": "nsgrid_2x2_auto",
+    "body": [
+      "<grid-layout rows=\"auto, auto\" columns=\"auto, auto\">",
+      "    <label text=\"0, 0\" row=\"0\" col=\"0\"></label>",
+      "    <label text=\"0, 1\" row=\"0\" col=\"1\"></label>",
+      "    <label text=\"1, 0\" row=\"1\" col=\"0\"></label>",
+      "    <label text=\"1, 1\" row=\"1\" col=\"1\"></label>",
+      "</grid-layout>"
+    ]
+  },
+  "{N} Grid Layout 3x3 ": {
+    "prefix": "nsgrid_3x3",
+    "body": [
+      "<grid-layout rows=\"*, *, *\" columns=\"*, *, *\">",
+      "    <label text=\"0, 0\" row=\"0\" col=\"0\"></label>",
+      "    <label text=\"0, 1\" row=\"0\" col=\"1\"></label>",
+      "    <label text=\"0, 2\" row=\"0\" col=\"2\"></label>",
+      "    <label text=\"1, 0\" row=\"1\" col=\"0\"></label>",
+      "    <label text=\"1, 1\" row=\"1\" col=\"1\"></label>",
+      "    <label text=\"1, 2\" row=\"1\" col=\"2\"></label>",
+      "    <label text=\"2, 0\" row=\"2\" col=\"0\"></label>",
+      "    <label text=\"2, 1\" row=\"2\" col=\"1\"></label>",
+      "    <label text=\"2, 2\" row=\"2\" col=\"2\"></label>",
+      "</grid-layout>"
+    ]
+  },
+  "{N} Grid Layout 3x3 Automatic Width/Height": {
+    "prefix": "nsgrid_3x3_auto",
+    "body": [
+      "<grid-layout rows=\"auto, auto, auto\" columns=\"auto, auto, auto\">",
+      "    <label text=\"0, 0\" row=\"0\" col=\"0\"></label>",
+      "    <label text=\"0, 1\" row=\"0\" col=\"1\"></label>",
+      "    <label text=\"0, 2\" row=\"0\" col=\"2\"></label>",
+      "    <label text=\"1, 0\" row=\"1\" col=\"0\"></label>",
+      "    <label text=\"1, 1\" row=\"1\" col=\"1\"></label>",
+      "    <label text=\"1, 2\" row=\"1\" col=\"2\"></label>",
+      "    <label text=\"2, 0\" row=\"2\" col=\"0\"></label>",
+      "    <label text=\"2, 1\" row=\"2\" col=\"1\"></label>",
+      "    <label text=\"2, 2\" row=\"2\" col=\"2\"></label>",
+      "</grid-layout>"
+    ]
+  },
+  "{N} Grid Layout 4x3 ": {
+    "prefix": "nsgrid_4x3",
+    "body": [
+      "<grid-layout rows=\"*, *, *, *\" columns=\"*, *, *\">",
+      "    <label text=\"0, 0\" row=\"0\" col=\"0\"></label>",
+      "    <label text=\"0, 1\" row=\"0\" col=\"1\"></label>",
+      "    <label text=\"0, 2\" row=\"0\" col=\"2\"></label>",
+      "    <label text=\"1, 0\" row=\"1\" col=\"0\"></label>",
+      "    <label text=\"1, 1\" row=\"1\" col=\"1\"></label>",
+      "    <label text=\"1, 2\" row=\"1\" col=\"2\"></label>",
+      "    <label text=\"2, 0\" row=\"2\" col=\"0\"></label>",
+      "    <label text=\"2, 1\" row=\"2\" col=\"1\"></label>",
+      "    <label text=\"2, 2\" row=\"2\" col=\"2\"></label>",
+      "    <label text=\"3, 0\" row=\"3\" col=\"0\"></label>",
+      "    <label text=\"3, 1\" row=\"3\" col=\"1\"></label>",
+      "    <label text=\"3, 2\" row=\"3\" col=\"2\"></label>",
+      "</grid-layout>"
+    ]
+  },
+  "{N} Grid Layout 4x3 Automatic Width/Height": {
+    "prefix": "nsgrid_4x3_auto",
+    "body": [
+      "<grid-layout rows=\"auto, auto, auto, auto\" columns=\"auto, auto, auto\">",
+      "    <label text=\"0, 0\" row=\"0\" col=\"0\"></label>",
+      "    <label text=\"0, 1\" row=\"0\" col=\"1\"></label>",
+      "    <label text=\"0, 2\" row=\"0\" col=\"2\"></label>",
+      "    <label text=\"1, 0\" row=\"1\" col=\"0\"></label>",
+      "    <label text=\"1, 1\" row=\"1\" col=\"1\"></label>",
+      "    <label text=\"1, 2\" row=\"1\" col=\"2\"></label>",
+      "    <label text=\"2, 0\" row=\"2\" col=\"0\"></label>",
+      "    <label text=\"2, 1\" row=\"2\" col=\"1\"></label>",
+      "    <label text=\"2, 2\" row=\"2\" col=\"2\"></label>",
+      "    <label text=\"3, 0\" row=\"3\" col=\"0\"></label>",
+      "    <label text=\"3, 1\" row=\"3\" col=\"1\"></label>",
+      "    <label text=\"3, 2\" row=\"3\" col=\"2\"></label>",
+      "</grid-layout>"
+    ]
+  },
+  "{N} Grid Layout 4x4": {
+    "prefix": "nsgrid_4x4",
+    "body": [
+      "<grid-layout rows=\"*, *, *, *\" columns=\"*, *, *, *\">",
+      "    <label text=\"0, 0\" row=\"0\" col=\"0\"></label>",
+      "    <label text=\"0, 1\" row=\"0\" col=\"1\"></label>",
+      "    <label text=\"0, 2\" row=\"0\" col=\"2\"></label>",
+      "    <label text=\"0, 3\" row=\"0\" col=\"3\"></label>",
+      "    <label text=\"1, 0\" row=\"1\" col=\"0\"></label>",
+      "    <label text=\"1, 1\" row=\"1\" col=\"1\"></label>",
+      "    <label text=\"1, 2\" row=\"1\" col=\"2\"></label>",
+      "    <label text=\"1, 3\" row=\"1\" col=\"3\"></label>",
+      "    <label text=\"2, 0\" row=\"2\" col=\"0\"></label>",
+      "    <label text=\"2, 1\" row=\"2\" col=\"1\"></label>",
+      "    <label text=\"2, 2\" row=\"2\" col=\"2\"></label>",
+      "    <label text=\"2, 3\" row=\"2\" col=\"3\"></label>",
+      "    <label text=\"3, 0\" row=\"3\" col=\"0\"></label>",
+      "    <label text=\"3, 1\" row=\"3\" col=\"1\"></label>",
+      "    <label text=\"3, 2\" row=\"3\" col=\"2\"></label>",
+      "    <label text=\"3, 3\" row=\"3\" col=\"3\"></label>",
+      "</grid-layout>"
+    ]
+  },
+  "{N} Grid Layout 4x4 Automatic Width/Height": {
+    "prefix": "nsgrid_4x4_auto",
+    "body": [
+      "<grid-layout rows=\"auto, auto, auto, auto\" columns=\"auto, auto, auto, auto\">",
+      "    <label text=\"0, 0\" row=\"0\" col=\"0\"></label>",
+      "    <label text=\"0, 1\" row=\"0\" col=\"1\"></label>",
+      "    <label text=\"0, 2\" row=\"0\" col=\"2\"></label>",
+      "    <label text=\"0, 3\" row=\"0\" col=\"3\"></label>",
+      "    <label text=\"1, 0\" row=\"1\" col=\"0\"></label>",
+      "    <label text=\"1, 1\" row=\"1\" col=\"1\"></label>",
+      "    <label text=\"1, 2\" row=\"1\" col=\"2\"></label>",
+      "    <label text=\"1, 3\" row=\"1\" col=\"3\"></label>",
+      "    <label text=\"2, 0\" row=\"2\" col=\"0\"></label>",
+      "    <label text=\"2, 1\" row=\"2\" col=\"1\"></label>",
+      "    <label text=\"2, 2\" row=\"2\" col=\"2\"></label>",
+      "    <label text=\"2, 3\" row=\"2\" col=\"3\"></label>",
+      "    <label text=\"3, 0\" row=\"3\" col=\"0\"></label>",
+      "    <label text=\"3, 1\" row=\"3\" col=\"1\"></label>",
+      "    <label text=\"3, 2\" row=\"3\" col=\"2\"></label>",
+      "    <label text=\"3, 3\" row=\"3\" col=\"3\"></label>",
+      "</grid-layout>"
+    ]
+  },
 
-    // Views
-    "{N} Scroll View": {
-        "prefix": "nsscrollview",
-        "body": [
-            "<ScrollView>",
-            "    $1",
-            "</ScrollView>"
-        ]
-    },
-    "{N} List View": {
-        "prefix": "nslistview",
-        "body": [
-            "<ListView [items]=\"source\" (loaded)=\"onLoaded($event)\" (itemLoading)=\"onItemLoading($event)\" (itemTap)=\"onItemTap($event)\" class=\"list-group\">",
-            "    <ng-template let-item=\"item\" let-odd=\"odd\" let-even=\"even\">",
-            "      <StackLayout>",
-            "        <Label [text]=\"item.title\" class=\"list-group-item\"></Label>",
-            "        $1",
-            "      </StackLayout>",
-            "    </ng-template>",
-            "</ListView>"
-        ]
-    },
-    "{N} Tab View": {
-        "prefix": "nstabview",
-        "body": [
-            "<TabView #tabView>",
-            "  <TabViewItem title=\"Tab 1\">",
-            "    <Label text=\"This is Label in Tab 1\"></Label>",
-            "  </TabViewItem>",
-            "  <TabViewItem title=\"Tab 2\">",
-            "    <Label text=\"This is Label in Tab 2\"></Label>",
-            "  </TabViewItem>",
-            "</TabView>",
-            "$1"
-        ]
-    },
-    "{N} Web View": {
-        "prefix": "nswebview",
-        "body": [
-            "<WebView src=\"someUrl | pathToLocalFile | htmlString\"></WebView>",
-            "$1"
-        ]
-    },
+  // Views
+  "{N} Scroll View": {
+    "prefix": "nsscrollview",
+    "body": ["<scroll-view>", "    $1", "</scroll-view>"]
+  },
+  "{N} List View": {
+    "prefix": "nslist-view",
+    "body": [
+      "<list-view bind-items=\"source\" on-loaded=\"onLoaded($event)\" on-itemLoading=\"onItemLoading($event)\" on-itemTap=\"onItemTap($event)\" class=\"list-group\">",
+      "    <ng-template let-item=\"item\" let-odd=\"odd\" let-even=\"even\">",
+      "      <stack-layout>",
+      "        <label bind-text=\"item.title\" class=\"list-group-item\"></label>",
+      "        $1",
+      "      </stack-layout>",
+      "    </ng-template>",
+      "</list-view>"
+    ]
+  },
+  "{N} Tab View": {
+    "prefix": "nstabview",
+    "body": [
+      "<tab-view #tabView>",
+      "  <tab-view-item title=\"Tab 1\">",
+      "    <label text=\"This is label in Tab 1\"></label>",
+      "  </tab-view-item>",
+      "  <tab-view-item title=\"Tab 2\">",
+      "    <label text=\"This is label in Tab 2\"></label>",
+      "  </tab-view-item>",
+      "</tab-view>",
+      "$1"
+    ]
+  },
+  "{N} Web View": {
+    "prefix": "nswebview",
+    "body": [
+      "<web-view src=\"someUrl | pathToLocalFile | htmlString\"></web-view>",
+      "$1"
+    ]
+  },
 
-    // Widgets
-    "{N} Image": {
-        "prefix": "nsimg",
-        "body": [
-            "<Image src=\"$1\"></Image>",
-            "$2"
-        ]
-    },
-    "{N} Label": {
-        "prefix": "nslabel",
-        "body": [
-            "<Label text=\"$1\" textWrap=\"true\"></Label>",
-            "$2"
-        ]
-    },
-    "{N} Button": {
-        "prefix": "nsbtn",
-        "body": [
-            "<Button text=\"$1\" (tap)=\"$2\"></Button>",
-            "$3"
-        ]
-    },
-    "{N} Text Field": {
-        "prefix": "nstextfield",
-        "body": [
-            "<TextField hint=\"$1\" text=\"$2\"></TextField>",
-            "$3"
-        ]
-    },
-    "{N} Password Field": {
-        "prefix": "nspassword",
-        "body": [
-            "<TextField hint=\"Enter your password.\" text=\"$1\" secure=\"true\"></TextField>",
-            "$2"
-        ]
-    },
-    "{N} Editable TextView": {
-        "prefix": "nstextview_editable",
-        "body": [
-            "<TextView hint=\"$1\" text=\"$2\" editable=\"true\"></TextView>",
-            "$3"
-        ]
-    },
-    "{N} Non-Editable TextView": {
-        "prefix": "nstextview_non-editable",
-        "body": [
-            "<TextView text=\"$1\" editable=\"false\"></TextView>",
-            "$2"
-        ]
-    },
-    "{N} SearchBar": {
-        "prefix": "nssearchbar",
-        "body": [
-            "<SearchBar id=\"${1:searchBar}\" hint=\"${2:Search}\" text=\"$3\" (clear)=\"${4:onClear}\" (submit)=\"${5:onSubmit}\" class=\"search-bar\"></SearchBar>",
-            "$6"
-        ]
-    },
-    "{N} Switch": {
-        "prefix": "nsswitch",
-        "body": [
-            "<Switch [checked]=\"$1\" class=\"switch\"></Switch>",
-            "$2"
-        ]
-    },
-    "{N} Progress Bar": {
-        "prefix": "nsprogress",
-        "body": [
-            "<Progress [value]=\"$1\" class=\"progress\"></Progress>",
-            "$2"
-        ]
-    },
-    "{N} Slider": {
-        "prefix": "nsslider",
-        "body": [
-            "<Slider [minValue]=\"$1\" [maxValue]=\"$2\" [value]=\"$3\" class=\"slider\"></Slider>",
-            "$4"
-        ]
-    },
-    "{N} Date Picker": {
-        "prefix": "nsdate",
-        "body": [
-            "<DatePicker [day]=\"$1\" [month]=\"$2\" [year]=\"$3\"></DatePicker>",
-            "$4"
-        ]
-    },
-    "{N} Time Picker": {
-        "prefix": "nstime",
-        "body": [
-            "<TimePicker [hour]=\"$1\" [minute]=\"$2\"></TimePicker>",
-            "$3"
-        ]
-    },
-    "{N} List Picker": {
-        "prefix": "nslistpicker",
-        "body": [
-            "<ListPicker [items]=\"$1\" [(ngModel)]=\"$2\"></ListPicker>",
-            "$3"
-        ]
-    },
-    "{N} Activity Indicator": {
-        "prefix": "nsloading",
-        "body": [
-            "<ActivityIndicator width=\"100\" height=\"100\" [busy]=\"$1\" class=\"activity-indicator\"></ActivityIndicator>",
-            "$2"
-        ]
-    },
-    "{N} Segmented Bar": {
-        "prefix": "nssegmentedbar",
-        "body": [
-            "<SegmentedBar [items]=\"$1\" [(ngModel)]=\"$2\">",
-            "</SegmentedBar>"
-        ]
-    },
-    "{N} Border": {
-        "prefix": "nsborder",
-        "body": [
-            "<Border borderRadius=\"$1\" borderWidth=\"$2\" borderColor=\"#000000\">",
-            "    $3",
-            "</Border>"
-        ]
-    },
+  // Widgets
+  "{N} Image": {
+    "prefix": "nsimg",
+    "body": ["<image src=\"$1\"></image>", "$2"]
+  },
+  "{N} label": {
+    "prefix": "nslabel",
+    "body": ["<label text=\"$1\" textWrap=\"true\"></label>", "$2"]
+  },
+  "{N} button": {
+    "prefix": "nsbtn",
+    "body": ["<button text=\"$1\" on-tap=\"$2\"></button>", "$3"]
+  },
+  "{N} Text Field": {
+    "prefix": "nstextfield",
+    "body": ["<text-field hint=\"$1\" text=\"$2\"></text-field>", "$3"]
+  },
+  "{N} Password Field": {
+    "prefix": "nspassword",
+    "body": [
+      "<text-field hint=\"Enter your password.\" text=\"$1\" secure=\"true\"></text-field>",
+      "$2"
+    ]
+  },
+  "{N} Editable TextView": {
+    "prefix": "nstextview_editable",
+    "body": [
+      "<text-view hint=\"$1\" text=\"$2\" editable=\"true\"></text-view>",
+      "$3"
+    ]
+  },
+  "{N} Non-Editable TextView": {
+    "prefix": "nstextview_non-editable",
+    "body": ["<text-view text=\"$1\" editable=\"false\"></text-view>", "$2"]
+  },
+  "{N} SearchBar": {
+    "prefix": "nssearchbar",
+    "body": [
+      "<search-bar id=\"${1:searchBar}\" hint=\"${2:Search}\" text=\"$3\" on-clear=\"${4:onClear}\" on-submit=\"${5:onSubmit}\" class=\"search-bar\"></search-bar>",
+      "$6"
+    ]
+  },
+  "{N} Switch": {
+    "prefix": "nsswitch",
+    "body": ["<switch bind-checked=\"$1\" class=\"switch\"></switch>", "$2"]
+  },
+  "{N} Progress Bar": {
+    "prefix": "nsprogress",
+    "body": ["<progress bind-value=\"$1\" class=\"progress\"></progress>", "$2"]
+  },
+  "{N} Slider": {
+    "prefix": "nsslider",
+    "body": [
+      "<slider bind-minValue=\"$1\" bind-maxValue=\"$2\" bind-value=\"$3\" class=\"slider\"></slider>",
+      "$4"
+    ]
+  },
+  "{N} Date Picker": {
+    "prefix": "nsdate",
+    "body": [
+      "<date-picker bind-day=\"$1\" bind-month=\"$2\" bind-year=\"$3\"></date-picker>",
+      "$4"
+    ]
+  },
+  "{N} Time Picker": {
+    "prefix": "nstime",
+    "body": [
+      "<time-picker bind-hour=\"$1\" bind-minute=\"$2\"></time-picker>",
+      "$3"
+    ]
+  },
+  "{N} List Picker": {
+    "prefix": "nslistpicker",
+    "body": [
+      "<list-picker bind-items=\"$1\" bindon-ngModel=\"$2\"></list-picker>",
+      "$3"
+    ]
+  },
+  "{N} Activity Indicator": {
+    "prefix": "nsloading",
+    "body": [
+      "<activity-indicator width=\"100\" height=\"100\" [busy]=\"$1\" class=\"activity-indicator\"></activity-indicator>",
+      "$2"
+    ]
+  },
+  "{N} Segmented Bar": {
+    "prefix": "nssegmentedbar",
+    "body": [
+      "<segmented-bar bind-items=\"$1\" bindon-ngModel=\"$2\">",
+      "</segmented-bar>"
+    ]
+  },
+  "{N} Border": {
+    "prefix": "nsborder",
+    "body": [
+      "<border border-radius=\"$1\" border-width=\"$2\" border-color=\"#000000\">",
+      "    $3",
+      "</border>"
+    ]
+  },
 
-    // Attributes
-    "{N} CSS Class Attribute": {
-        "prefix": "css",
-        "body": "class=\"$1\"$2"
-    },
-    "{N} Text Attribute": {
-        "prefix": "text",
-        "body": "text=\"$1\"$2"
-    },
-    "{N} Text Binding Attribute": {
-        "prefix": "textbinding",
-        "body": "[text]=\"$1\"$2"
-    },
-    "{N} Icon Attribute": {
-        "prefix": "icon",
-        "body": "icon=\"res://$1\"$2"
-    },
-    "{N} Tap Attribute": {
-        "prefix": "tap",
-        "body": "(tap)=\"$1\"$2"
-    },
-	"{N} Text Wrap Attribute": {
-        "prefix": "wrap",
-        "body": "textWrap=\"true\"$2"
-    },
-    "{N} Horizontal Alignment Attribute": {
-        "prefix": "halign",
-        "body": "horizontalAlignment=\"$1\"$2"
-    },
-    "{N} Vertical Alignment Attribute": {
-        "prefix": "valign",
-        "body": "verticalAlignment=\"$1\"$2"
-    },
-    "{N} Visibility Attribute": {
-        "prefix": "visibility",
-        "body": "[visibility]=\"isItemVisible ? 'visible' : 'collapsed'\"$2"
-    },
-    "{N} Stretch Attribute": {
-        "prefix": "stretch",
-        "body": "stretch=\"fill$1\"$2"
-    },
-    "{N} Keyboard Type Attribute": {
-        "prefix": "kbtype",
-        "body": "keyboardType=\"email$1\"$2"
-    },
-    "{N} Row Attribute": {
-        "prefix": "row",
-        "body": "row=\"$1\"$2"
-    },
-    "{N} Column Attribute": {
-        "prefix": "col",
-        "body": "col=\"$1\"$2"
-    },
-    "{N} Colspan Attribute": {
-        "prefix": "colspan",
-        "body": "colSpan=\"$1\"$2"
-    },
-    "{N} Rowspan Attribute": {
-        "prefix": "rowspan",
-        "body": "rowSpan=\"$1\"$2"
-    },
-    "{N} Width Attribute": {
-        "prefix": "width",
-        "body": "width=\"$1\"$2"
-    },
-    "{N} Height Attribute": {
-        "prefix": "height",
-        "body": "height=\"$1\"$2"
-    }
+  // Attributes
+  "{N} CSS Class Attribute": {
+    "prefix": "css",
+    "body": "class=\"$1\"$2"
+  },
+  "{N} Text Attribute": {
+    "prefix": "text",
+    "body": "text=\"$1\"$2"
+  },
+  "{N} Text Binding Attribute": {
+    "prefix": "textbinding",
+    "body": "bind-text=\"$1\"$2"
+  },
+  "{N} Icon Attribute": {
+    "prefix": "icon",
+    "body": "icon=\"res://$1\"$2"
+  },
+  "{N} Tap Attribute": {
+    "prefix": "tap",
+    "body": "on-tap=\"$1\"$2"
+  },
+  "{N} Text Wrap Attribute": {
+    "prefix": "wrap",
+    "body": "textWrap=\"true\"$2"
+  },
+  "{N} Horizontal Alignment Attribute": {
+    "prefix": "halign",
+    "body": "horizontalAlignment=\"$1\"$2"
+  },
+  "{N} Vertical Alignment Attribute": {
+    "prefix": "valign",
+    "body": "verticalAlignment=\"$1\"$2"
+  },
+  "{N} Visibility Attribute": {
+    "prefix": "visibility",
+    "body": "bind-visibility=\"isItemVisible ? 'visible' : 'collapsed'\"$2"
+  },
+  "{N} Stretch Attribute": {
+    "prefix": "stretch",
+    "body": "stretch=\"fill$1\"$2"
+  },
+  "{N} Keyboard Type Attribute": {
+    "prefix": "kbtype",
+    "body": "keyboard-type=\"email$1\"$2"
+  },
+  "{N} Row Attribute": {
+    "prefix": "row",
+    "body": "row=\"$1\"$2"
+  },
+  "{N} Column Attribute": {
+    "prefix": "col",
+    "body": "col=\"$1\"$2"
+  },
+  "{N} Colspan Attribute": {
+    "prefix": "colspan",
+    "body": "col-span=\"$1\"$2"
+  },
+  "{N} Rowspan Attribute": {
+    "prefix": "rowspan",
+    "body": "row-span=\"$1\"$2"
+  },
+  "{N} Width Attribute": {
+    "prefix": "width",
+    "body": "width=\"$1\"$2"
+  },
+  "{N} Height Attribute": {
+    "prefix": "height",
+    "body": "height=\"$1\"$2"
+  }
 }
