@@ -1,7 +1,7 @@
 {
     "name": "valid-nativescript-ng2-snippets",
-    "displayName": "Valid NativeScript + Angular Snippets",
-    "description": "Snippets for NativeScript + Angular Development.",
+    "displayName": "HTML5 Valid NativeScript + Angular Snippets",
+    "description": "HTML5 Valid Snippets for NativeScript + Angular Development.",
     "version": "2.0.1",
     "publisher": "intellective",
     "icon": "images/logo.png",
@@ -12,7 +12,7 @@
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/intellectiveco/nativescript-ng2-vscode-snippets/issues",
-        "email": "walkerrunpdx@gmail.com"
+        "email": "info@intellective.co"
     },
     "homepage": "https://github.com/intellectiveco/nativescript-ng2-vscode-snippets/blob/master/README.md",
     "repository": {
